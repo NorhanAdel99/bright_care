@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <!-- meta  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- // bootstrab // -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+
+    <!-- datatable -->
+    <link rel="stylesheet" href="css/dataTables.css">
+    <link rel="stylesheet" href="css/responsive.dataTables.min.css">
+    <!-- // fontawesome // -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- // css // -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/en-style.css"> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="side_menu d-flex flex-column ">
+        <a href="" class=" contain_dashboard_logo  mb-20 ">
+            <img src="img/logo.png" alt="logo" class="logo">
+        </a>
+        <ul class="side_menu_ul active">
+            <li class="about_section active">
+                <a href="index.html" class="d-flex align-items-center  ">
+                    <img src="img/home.png" alt="home" class="side_menu_icon">
+                    <span class="hide-section m-start-10"> الحاضنات </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="parents.html" class="d-flex align-items-center  ">
+                    <img src="img/Parents.png" alt="Parents" class="side_menu_icon">
+                    <span class="hide-section m-start-10"> أولياء الامور </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="children.html" class="d-flex align-items-center ">
+                    <img src="img/children.png" alt="childre" class="side_menu_icon">
+                    <span class="hide-section m-start-10">الأطفال </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="package_after_login.html" class="d-flex align-items-center   ">
+                    <img src="img/package.png" alt="package" class="side_menu_icon">
+                    <span class="hide-section m-start-10"> الباقات </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="QR_Code.html" class="d-flex align-items-center   ">
+                    <img src="img/qr-code.png" alt="package" class="side_menu_icon">
+                    <span class="hide-section m-start-10"> QR Code </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="lang.html" class="d-flex align-items-center  ">
+                    <img src="img/setting.png" alt="lang" class="side_menu_icon">
+                    <span class="hide-section m-start-10"> اللغة </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="privacy_policy.html" class="d-flex align-items-center  ">
+                    <img src="img/comment.png" alt="comment" class="side_menu_icon">
+                    <span class="hide-section m-start-10"> سياسة الخصوصيه </span>
+                </a>
+            </li>
+
+            <li class="about_section">
+                <a href="terms_and_condition.html" class="d-flex align-items-center  ">
+                    <img src="img/TermsAndCondition.png" alt="comment" class="side_menu_icon">
+                    <span class="hide-section m-start-10 "> الشروط والأحكام </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="contactUs.html" class="d-flex align-items-center  ">
+                    <img src="img/contact.png" alt="contact" class="side_menu_icon">
+                    <span class="hide-section m-start-10 "> تواصل معنا </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="data.html" class="d-flex align-items-center  ">
+                    <img src="img/contact.png" alt="myData" class="side_menu_icon">
+                    <span class="hide-section m-start-10 "> بياناتي </span>
+                </a>
+            </li>
+
+            <li class="about_section ">
+                <a href="login.html" class="d-flex align-items-center  ">
+                    <img src="img/noun_logout.png" alt="logOut" class="side_menu_icon logOut">
+                    <span class="hide-section m-start-10"> تسجيل الخروج </span>
+                </a>
+            </li>
+
+
+        </ul>
+    </div>
+    <div id="main">
+        <header class="dashboard_topper">
+            <div class="container">
+                <div class="flex-between">
+
+                    <img src="img/toggle_Side.png" alt="toggleSide" class="toggleSide">
+
+                    <div class="d-flex flex-wrap gap-20">
+
+
+                        <a href="notification.html" class="contain-notification">
+                            <img src="img/notification.png" alt="notification" class="notificationImg" />
+                            <div class="notificationCount">
+                                3
+                            </div>
+                        </a>
+                        <div class="flex-center gap-5">
+                            <img src="img/waving-hand.png" alt="welcome" class="welcomeImg">
+                            <span> اهلا محمد </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="body-content">
+            <div class="container">
+                <div class="overflow-hidden">
+                    <div class=" animate__fadeInRight animate__animated">
+                        <div class="flex-between flex-wrap mb-2">
+                            <div>
+                                <h5 class=" mb-2 font-weight-bold"> الاطفال </h5>
+                                <div class="text-muted mb-2"> ظهور الاطفال وتفاصيلهم </div>
+                            </div>
+                            <div>
+                                <form class="d-flex align-items-center  gap-5 position-relative">
+                                    <input type="search" class="form-control" id="searchInput"
+                                        placeholder="ابحث باسم الحاضنة - رقم الجوال - الرقم الوظيفي ">
+                                    <i class="fa-solid fa-magnifying-glass searchIcon"></i>
+                                    <button type="button" class="btn main_btn sm p-2" data-toggle="modal"
+                                        data-target="#add">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <table id="table" class="project_table display responsive nowrap">
+                            <thead>
+                                <tr>
+
+                                    <th> رقم </th>
+                                    <th> الصورة </th>
+                                    <th> الاسم </th>
+                                    <th> تاريخ الميلاد </th>
+                                    <th> السن </th>
+                                    <th>عدد مرات الحضور</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+
+                            <tbody class="my-10">
+                                <tr>
+                                    <td> #1 </td>
+                                    <td>
+                                        <img src="img/child2.png" alt="child" class="tableUser">
+                                    </td>
+                                    <td> محمود احمد </td>
+                                    <td>
+                                        1/10/2020
+                                    </td>
+                                    <td> 3 سنوات </td>
+                                    <td>50</td>
+                                    <td>
+                                        <a href="childrenDetails.html">
+                                            <i class="fa-solid fa-chevron-left"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> #1 </td>
+                                    <td>
+                                        <img src="img/child2.png" alt="child" class="tableUser">
+                                    </td>
+                                    <td> محمود احمد </td>
+                                    <td>
+                                        1/10/2020
+                                    </td>
+                                    <td> 3 سنوات </td>
+                                    <td>50</td>
+                                    <td>
+                                        <a href="childrenDetails.html">
+                                            <i class="fa-solid fa-chevron-left"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> #1 </td>
+                                    <td>
+                                        <img src="img/child2.png" alt="child" class="tableUser">
+                                    </td>
+                                    <td> محمود احمد </td>
+                                    <td>
+                                        1/10/2020
+                                    </td>
+                                    <td> 3 سنوات </td>
+                                    <td>50</td>
+                                    <td>
+                                        <a href="childrenDetails.html">
+                                            <i class="fa-solid fa-chevron-left"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> #1 </td>
+                                    <td>
+                                        <img src="img/child2.png" alt="child" class="tableUser">
+                                    </td>
+                                    <td> محمود احمد </td>
+                                    <td>
+                                        1/10/2020
+                                    </td>
+                                    <td> 3 سنوات </td>
+                                    <td>50</td>
+                                    <td>
+                                        <a href="childrenDetails.html">
+                                            <i class="fa-solid fa-chevron-left"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> #1 </td>
+                                    <td>
+                                        <img src="img/child2.png" alt="child" class="tableUser">
+                                    </td>
+                                    <td> محمود احمد </td>
+                                    <td>
+                                        1/10/2020
+                                    </td>
+                                    <td> 3 سنوات </td>
+                                    <td>50</td>
+                                    <td>
+                                        <a href="childrenDetails.html">
+                                            <i class="fa-solid fa-chevron-left"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> #1 </td>
+                                    <td>
+                                        <img src="img/child2.png" alt="child" class="tableUser">
+                                    </td>
+                                    <td> محمود احمد </td>
+                                    <td>
+                                        1/10/2020
+                                    </td>
+                                    <td> 3 سنوات </td>
+                                    <td>50</td>
+                                    <td>
+                                        <a href="childrenDetails.html">
+                                            <i class="fa-solid fa-chevron-left"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> #1 </td>
+                                    <td>
+                                        <img src="img/child2.png" alt="child" class="tableUser">
+                                    </td>
+                                    <td> محمود احمد </td>
+                                    <td>
+                                        1/10/2020
+                                    </td>
+                                    <td> 3 سنوات </td>
+                                    <td>50</td>
+                                    <td>
+                                        <a href="childrenDetails.html">
+                                            <i class="fa-solid fa-chevron-left"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> #1 </td>
+                                    <td>
+                                        <img src="img/child2.png" alt="child" class="tableUser">
+                                    </td>
+                                    <td> محمود احمد </td>
+                                    <td>
+                                        1/10/2020
+                                    </td>
+                                    <td> 3 سنوات </td>
+                                    <td>50</td>
+                                    <td>
+                                        <a href="childrenDetails.html">
+                                            <i class="fa-solid fa-chevron-left"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- modal-add-person -->
+    <div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form class="position-relative">
+
+                        <div class="closeModalIcon" data-dismiss="modal"><i class="fa-regular fa-circle-xmark"></i>
+                        </div>
+                        <div class="form-group text-center">
+                            <h6 class="mb-4"> ارفع صورة الحاضنة </h6>
+                            <label for="file" class="position-relative m-auto img_gallery">
+                                <input type="file" onchange="readURL(this);" id="file" hidden="">
+                                <div class="edit_icon">
+                                    <i class="fa-regular fa-image f-20"></i></i>
+                                </div>
+                                <div class="containImgPrev">
+                                    <img id="imgPrev" src="" alt="userPic">
+                                </div>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label phoneInput" for="name"><span class="m-end-5">
+                                    اسم الحاضنة</span><span class="text-danger f-16">*</span></label>
+                            <input type="text" class="form-control " id="name" placeholder=" نها احمد">
+                        </div>
+                        <div class="form-group ">
+                            <label class="form-label phoneInput" for="num"><span class="m-end-5">رقم
+                                    الجوال</span><span class="text-danger f-16">*</span></label>
+                            <input type="number" class="form-control " id="num" placeholder="010000100 ">
+
+                        </div>
+                        <div class="form-group ">
+                            <label class="form-label phoneInput" for="num"><span class="m-end-5"> الرقم الوظيفي
+                                </span><span class="text-danger f-16">*</span></label>
+                            <input type="number" class="form-control " id="num" placeholder="010000100 ">
+                        </div>
+                        <div class="form-group position-relative">
+                            <label class="form-label " for="password2"><span class="m-end-5"> كلمة المرور
+                                </span><span class="text-danger f-16">*</span></label>
+                            <input type="password" class="form-control password" id="password2"
+                                placeholder="الرجاء ادخال كلمة المرور ">
+                            <div class="input_icon eye " data-id="password2">
+                                <i class="fa-regular  fa-eye-slash"></i>
+                                <!-- <i class="fa-regular fa-eye"></i> -->
+                            </div>
+                        </div>
+                        <div class="form-group position-relative">
+                            <label class="form-label " for="password3"><span class="m-end-5">تأكيد كلمة المرور
+                                </span><span class="text-danger f-16">*</span></label>
+                            <input type="password" class="form-control password" id="password3"
+                                placeholder=" تأكيد كلمة المرور ">
+                            <div class="input_icon eye" data-id="password3">
+                                <i class="fa-regular  fa-eye-slash"></i>
+                                <!-- <i class="fa-regular fa-eye"></i> -->
+                            </div>
+                        </div>
+
+                        <button class="btn main_btn butn__new w-100 form-group" type="submit" data-dismiss="modal"
+                            data-toggle="modal" data-target="#certainModalNum">
+                            اضافة
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ________________ // loader // ________________ -->
+    <div class="loader">
+        <img src="img/logo.png" alt="" class="logoWhite  animate__zoomIn  animate__animated">
+    </div>
+    <!-- _______________ // end_Page // _______________ -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/dataTables.js"></script>
+    <script src="js/dataTables.responsive.min.js"></script>
+    <!-- // main-script //  -->
+    <script src="js/script.js"></script>
+    <script>
+        document.querySelector('.toggleSide').onclick = function () {
+            // console.log
+            document.querySelector('.side_menu').classList.toggle('sm')
+            document.querySelector('#main').classList.toggle('active')
+
+
+            if (document.querySelector('.side_menu').classList.contains('sm')) {
+                document.querySelector('#main').classList.add('active')
+                document.querySelector('.toggleSide').classList.add('active')
+            } else {
+                document.querySelector('#main').classList.remove('active')
+                document.querySelector('.toggleSide').classList.remove('active')
+
+            }
+
+        }
+
+        let allLinks = document.querySelectorAll(".side_menu_ul li a ");
+
+        allLinks.forEach((link) => {
+            if (link.href == location.href) {
+                link.parentElement.classList.add('active')
+            } else if (link.href !== location.href) {
+                link.parentElement.classList.remove('active');
+            }
+        })
+        // //////////// data table
+        $(document).ready(function () {
+            $('table').DataTable({
+                responsive: true,
+                scrollCollapse: true,
+                columnDefs: [
+                    // { className: "desktop", "targets": [2], "responsivePriority": "2" },
+                    // { className: "mobile-l", "targets": [2], "responsivePriority": 3 },
+                    // tablet-p//mobile-l// mobile-p
+                    { responsivePriority: 2, targets: -1 }
+                ],
+                "language":
+                {
+                    "sProcessing": "جارٍ التحميل...",
+                    "sLengthMenu": "أظهر _MENU_ مدخلات",
+                    "sZeroRecords": "لم يعثر على أية سجلات",
+                    "sInfo": " إظهار النتائج من  _START_ - _END_ ",
+                    "sInfoEmpty": "يعرض 0 إلى 0 من أصل 0 سجل",
+                    "sInfoFiltered": "(منتقاة من مجموع _MAX_ مُدخل)",
+                    "sInfoPostFix": "",
+                    "sSearch": "ابحث:",
+                    "sUrl": "",
+                    "oPaginate": {
+                        "sFirst": 'الاول',
+                        "sNext": '<i class="fa-solid fa-angles-left light-color"></i>',
+                        "sPrevious": '<i class="fa-solid fa-angles-right light-color"></i>',
+                        "sLast": "الأخير"
+                    }
+                },
+
+            });
+            window.addEventListener("load", function () {
+                let footer = document.createElement("div");
+                footer.classList.add('table_footer')
+                footer.classList.add('p-2')
+                let info = document.querySelector(".dataTables_info");
+                let pagination = document.querySelector(".dataTables_paginate")
+                footer.append(pagination)
+                footer.append(info)
+
+                var containTable = document.querySelector('#table_wrapper');
+                containTable.append(footer)
+                // link external search // disable search with css not option 
+            })
+        })
+
+        // link external search // disable search with css not option 
+        $('#searchInput').keyup(function () {
+            var table = $('.project_table').DataTable();
+            table.search($(this).val()).draw();
+        });
+    </script>
+
+</body>
+
+</html>

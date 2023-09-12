@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <!-- meta  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- // bootstrab // -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+
+    <!-- datatable -->
+    <link rel="stylesheet" href="css/dataTables.css">
+    <link rel="stylesheet" href="css/responsive.dataTables.min.css">
+    <!-- // fontawesome // -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- // css // -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/en-style.css"> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="side_menu d-flex flex-column ">
+        <a href="" class=" contain_dashboard_logo  mb-20 ">
+            <img src="img/logo.png" alt="logo" class="logo">
+        </a>
+        <ul class="side_menu_ul active">
+            <li class="about_section active">
+                <a href="index.html" class="d-flex align-items-center  ">
+                    <img src="img/home.png" alt="home" class="side_menu_icon">
+                    <span class="hide-section m-start-10"> الحاضنات </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="parents.html" class="d-flex align-items-center  ">
+                    <img src="img/Parents.png" alt="Parents" class="side_menu_icon">
+                    <span class="hide-section m-start-10"> أولياء الامور </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="children.html" class="d-flex align-items-center ">
+                    <img src="img/children.png" alt="childre" class="side_menu_icon">
+                    <span class="hide-section m-start-10">الأطفال </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="package_after_login.html" class="d-flex align-items-center   ">
+                    <img src="img/package.png" alt="package" class="side_menu_icon">
+                    <span class="hide-section m-start-10"> الباقات </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="QR_Code.html" class="d-flex align-items-center   ">
+                    <img src="img/qr-code.png" alt="package" class="side_menu_icon">
+                    <span class="hide-section m-start-10"> QR Code </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="lang.html" class="d-flex align-items-center  ">
+                    <img src="img/setting.png" alt="lang" class="side_menu_icon">
+                    <span class="hide-section m-start-10"> اللغة </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="privacy_policy.html" class="d-flex align-items-center  ">
+                    <img src="img/comment.png" alt="comment" class="side_menu_icon">
+                    <span class="hide-section m-start-10"> سياسة الخصوصيه </span>
+                </a>
+            </li>
+
+            <li class="about_section">
+                <a href="terms_and_condition.html" class="d-flex align-items-center  ">
+                    <img src="img/TermsAndCondition.png" alt="comment" class="side_menu_icon">
+                    <span class="hide-section m-start-10 "> الشروط والأحكام </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="contactUs.html" class="d-flex align-items-center  ">
+                    <img src="img/contact.png" alt="contact" class="side_menu_icon">
+                    <span class="hide-section m-start-10 "> تواصل معنا </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="data.html" class="d-flex align-items-center  ">
+                    <img src="img/contact.png" alt="myData" class="side_menu_icon">
+                    <span class="hide-section m-start-10 "> بياناتي </span>
+                </a>
+            </li>
+
+            <li class="about_section ">
+                <a href="login.html" class="d-flex align-items-center  ">
+                    <img src="img/noun_logout.png" alt="logOut" class="side_menu_icon logOut">
+                    <span class="hide-section m-start-10"> تسجيل الخروج </span>
+                </a>
+            </li>
+
+
+        </ul>
+    </div>
+    <div id="main">
+        <header class="dashboard_topper">
+            <div class="container">
+                <div class="flex-between">
+
+                    <img src="img/toggle_Side.png" alt="toggleSide" class="toggleSide">
+
+                    <div class="d-flex flex-wrap gap-20">
+
+
+                        <a href="notification.html" class="contain-notification">
+                            <img src="img/notification.png" alt="notification" class="notificationImg" />
+                            <div class="notificationCount">
+                                3
+                            </div>
+                        </a>
+                        <div class="flex-center gap-5">
+                            <img src="img/waving-hand.png" alt="welcome" class="welcomeImg">
+                            <span> اهلا محمد </span>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </header>
+        <div class="body-content">
+            <div class="container">
+                <div class="overflow-hidden">
+                    <div class=" animate__fadeInRight animate__animated">
+                        <h5 class=" mb-2 "> بياناتي </h5>
+                        <div class="text-muted mb-2 mb-4 "> يمكنك تغيير البيانات الخاصة بك </div>
+                        <div class="bg-wh  rad-5 p-3">
+
+                            <div class="row justify-content-center">
+                                <div class="col-md-6">
+                                    <form class="p-3">
+                                        <div class="form-group">
+                                            <label class="form-label phoneInput" for="name"><span class="m-end-5">
+                                                    اسم الحضانه</span><span class="text-danger f-16">*</span></label>
+                                            <input type="text" class="form-control " id="name"
+                                                placeholder="حضانة اسمايل">
+                                        </div>
+                                        <div class="form-group containInputIcon">
+                                            <label class="form-label phoneInput" for="num"><span class="m-end-5">رقم
+                                                    الجوال</span><span class="text-danger f-16">*</span></label>
+                                            <input type="number" class="form-control " id="num"
+                                                placeholder="010000100 ">
+                                            <label class="input_icon" for="num" data-toggle="modal"
+                                                data-target="#exampleModalNum"><i
+                                                    class="fa-regular fa-pen-to-square"></i></label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label phoneInput" for="mail"><span class="m-end-5">
+                                                    البريد الالكتروني </span><span
+                                                    class="text-danger f-16">*</span></label>
+                                            <input type="email" class="form-control " id="mail"
+                                                placeholder="example@info.com">
+                                        </div>
+                                        <div class="form-group containInputIcon">
+                                            <label class="form-label" for="location1"><span
+                                                    class="m-end-5">المدينة</span><span
+                                                    class="text-danger f-16">*</span></label>
+                                            <input type="text" class="form-control form-input address" id="location1"
+                                                placeholder="الرياض" data-toggle="modal" data-target="#exampleModal2">
+                                            <label class="input_icon" for="location1"><i
+                                                    class="fa-solid fa-location-dot "></i></label>
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label phoneInput" for="commercialRegister
+                                            "><span class="m-end-5">
+                                                    السجل التجاري</span><span class="text-danger f-16">*</span></label>
+                                            <input type="number" class="form-control " id="commercialRegister
+                                            " placeholder="98888">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label phoneInput" for="responsible
+                                            "><span class="m-end-5">
+                                                    اسم مسئول الحضانة</span><span
+                                                    class="text-danger f-16">*</span></label>
+                                            <input type="text" class="form-control " id="responsible
+                                            " placeholder="محمد احمد">
+                                        </div>
+                                        <div class="flex-center flex-column gap-10">
+                                            <button class="btn main_btn butn__new exlg_btn butn__new">
+                                                حفظ التعديلات
+                                            </button>
+                                            <a href="change_password.html"
+                                                class="btn main_btn transparent_btn butn__new exlg_btn " data-toggle="modal"
+                                                data-target="#exampleModalPassword">
+                                                تغيير كلمة المرور
+                                            </a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- modal-map -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div id="map" style="width:100%;height:300px"></div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn main_btn butn__new" data-dismiss="modal">العودة </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal-num -->
+    <div class="modal fade" id="exampleModalNum" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form class="position-relative">
+
+                        <h5 class="text-center mb-2 "> تغيير رقم جوالك </h5>
+                        <div class="closeModalIcon" data-dismiss="modal"><i class="fa-regular fa-circle-xmark"></i>
+                        </div>
+                        <div class="form-group position-relative">
+                            <label class="form-label " for="password"><span class="m-end-5"> كلمة المرور الحالية
+                                </span><span class="text-danger f-16 password">*</span></label>
+                            <input type="password" class="form-control password" id="password"
+                                placeholder="الرجاء ادخال كلمة المرور الحالية">
+                            <div class="input_icon eye" data-id="password">
+                                <i class="fa-regular fa-eye-slash"></i>
+                            </div>
+                        </div>
+                        <div class="form-group position-relative">
+                            <label class="form-label " for="password2"><span class="m-end-5"> كلمة المرور الجديدة
+                                </span><span class="text-danger f-16 password">*</span></label>
+                            <input type="password" class="form-control password" id="password2"
+                                placeholder="الرجاء ادخال كلمة المرور الجديدة">
+                            <div class="input_icon eye" data-id="password2">
+                                <i class="fa-regular fa-eye-slash"></i>
+                            </div>
+                        </div>
+                        <button class="btn main_btn w-100 form-group butn__new" type="submit" data-dismiss="modal"
+                            data-toggle="modal" data-target="#certainModalNum">
+                             حفظ 
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal-change number done -->
+    <div class="modal fade" id="certainModalNum" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h5 class="text-center mb-2 "> تم تغيير رقم جوالك بنجاح</h5>
+                    <img src="img/changeDone.png" alt="change_num" class="modalChange">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal-num -->
+    <div class="modal fade" id="exampleModalPassword" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form class="position-relative">
+                        <h5 class="text-center mb-2 "> تغيير رقم جوالك </h5>
+                        <div class="closeModalIcon" data-dismiss="modal"><i class="fa-regular fa-circle-xmark"></i>
+                        </div>
+                        <div class="form-group position-relative">
+                            <label class="form-label " for="password"><span class="m-end-5"> كلمة المرور القديمة
+                                </span><span class="text-danger f-16">*</span></label>
+                            <input type="password" class="form-control password" id="password"
+                                placeholder="الرجاء ادخال كلمة المرور القديمة">
+                            <div class="input_icon eye" data-id="password">
+                                <i class="fa-regular fa-eye-slash"></i>
+                                <!-- <i class="fa-regular fa-eye"></i> -->
+                            </div>
+                        </div>
+                        <div class="form-group position-relative">
+                            <label class="form-label " for="password2"><span class="m-end-5"> كلمة المرور الجديدة
+                                </span><span class="text-danger f-16">*</span></label>
+                            <input type="password" class="form-control password" id="password2"
+                                placeholder="الرجاء ادخال كلمة المرور الجديدة">
+                            <div class="input_icon eye" data-id="password2">
+                                <i class="fa-regular fa-eye-slash"></i>
+                                <!-- <i class="fa-regular fa-eye"></i> -->
+                            </div>
+                        </div>
+                        <div class="form-group position-relative">
+                            <label class="form-label " for="password3"><span class="m-end-5">تأكيد كلمة المرور الجديدة
+                                </span><span class="text-danger f-16">*</span></label>
+                            <input type="password" class="form-control password" id="password3"
+                                placeholder="الرجاء ادخال كلمة المرور الجديدة">
+                            <div class="input_icon eye" data-id="password3">
+                                <i class="fa-regular fa-eye-slash"></i>
+                                <!-- <i class="fa-regular fa-eye"></i> -->
+                            </div>
+                        </div>
+                        <button class="btn main_btn w-100 form-group butn__new" type="submit" data-dismiss="modal"
+                            data-toggle="modal" data-target="#certainModalPassword">
+                            تسجيل دخولك
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal-change number done -->
+    <div class="modal fade" id="certainModalPassword" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h5 class="text-center mb-2"> تم تغيير كلمة المرور بنجاح </h5>
+                    <img src="img/changeDone.png" alt="change_num" class="modalChange">
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- ________________ // loader // ________________ -->
+     <div class="loader">
+        <img src="img/logo.png" alt="" class="logoWhite  animate__zoomIn  animate__animated">
+    </div>
+    <!-- _______________ // end_Page // _______________ -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/select2.min.js"></script>
+    <script src="js/dataTables.js"></script>
+    <script src="js/dataTables.responsive.min.js"></script>
+    <!-- // main-script //  -->
+    <script src="js/script.js"></script>
+    <script
+        src="https://maps.google.com/maps/api/js?&libraries=places&key=AIzaSyBNLoYGrbnQI_GMqHt6m0PSN9yA7Zvq7gA&callback=initMap"
+        type="text/javascript"></script>
+
+    <script>
+        // ////////////////////////////////////////
+        var map;
+        var marker;
+        var myLatlng = new google.maps.LatLng(24.774265, 46.738586);
+        var geocoder = new google.maps.Geocoder();
+        var infowindow = new google.maps.InfoWindow();
+        function initMap1() {
+            var mapOptions = {
+                zoom: 10,
+                center: myLatlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            map = new google.maps.Map(document.getElementById("map"), mapOptions);
+            marker = new google.maps.Marker({
+                map: map,
+                position: myLatlng,
+                draggable: true
+            });
+            geocoder.geocode({ 'latLng': myLatlng }, function (results, status) {
+                if (status == google.maps.GeocoderStatus.OK) {
+                    if (results[0]) {
+                        document.querySelector(".address").value = results[0].formatted_address;
+                        infowindow.setContent(results[0].formatted_address);
+                        infowindow.open(map, marker);
+                    }
+                }
+            });
+            google.maps.event.addListener(marker, 'dragend', function () {
+                geocoder.geocode({ 'latLng': marker.getPosition() }, function (results, status) {
+                    if (status == google.maps.GeocoderStatus.OK) {
+                        if (results[0]) {
+                            document.querySelector(".address").value = results[0].formatted_address;
+                            infowindow.setContent(results[0].formatted_address);
+                            infowindow.open(map, marker);
+                        }
+                    }
+                });
+            });
+        }
+        google.maps.event.addDomListener(window, 'load', initMap1);
+        // ///////////////////////////////////////////////////////
+        document.querySelector('.toggleSide').onclick = function () {
+            // console.log
+            document.querySelector('.side_menu').classList.toggle('sm')
+            document.querySelector('#main').classList.toggle('active')
+
+
+            if (document.querySelector('.side_menu').classList.contains('sm')) {
+                document.querySelector('#main').classList.add('active')
+                document.querySelector('.toggleSide').classList.add('active')
+            } else {
+                document.querySelector('#main').classList.remove('active')
+                document.querySelector('.toggleSide').classList.remove('active')
+
+            }
+
+        }
+
+        let allLinks = document.querySelectorAll(".side_menu_ul li a ");
+
+        allLinks.forEach((link) => {
+            if (link.href == location.href) {
+                link.parentElement.classList.add('active')
+            } else if (link.href !== location.href) {
+                link.parentElement.classList.remove('active');
+            }
+        })
+
+        $('#searchInput').keyup(function () {
+            var table = $('.project_table').DataTable();
+            table.search($(this).val()).draw();
+        });
+        // ////////////////////
+
+        let passwords = document.querySelectorAll(".password");
+        let eyes = document.querySelectorAll('.eye')
+        eyes.forEach(eye => {
+            eye.onclick = function () {
+                passwords.forEach(pass => {
+                    if (pass.value == '') {
+                        return
+                    } else {
+                        if (pass.id == eye.dataset.id) {
+                            let type = pass.getAttribute('type') === 'password' ? 'text' : 'password';
+                            pass.setAttribute("type", type);
+                            if (pass.getAttribute('type') === 'password' || pass.value == "") {
+                                eye.querySelector('.fa-regular').classList.add('fa-eye-slash')
+                                eye.querySelector('.fa-regular').classList.remove('fa-eye')
+                            } else if (pass.getAttribute('type') === 'text') {
+                                eye.querySelector('.fa-regular').classList.remove('fa-eye-slash')
+                                eye.querySelector('.fa-regular').classList.add('fa-eye')
+                            }
+                        }
+                    }
+
+
+                })
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>

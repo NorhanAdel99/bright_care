@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <!-- meta  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- // bootstrab // -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <!-- flatPicker -->
+    <link rel="stylesheet" href="css/flatpickr.min.css">
+    <!-- // fontawesome // -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- // css // -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/en-style.css"> -->
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="main" class="w-100">
+        <header class="dashboard_topper">
+            <div class="container">
+                <div class="flex-between">
+
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="logo" class="logo">
+                    </a>
+
+                    <label for="lang" class="containRadio">
+                        <input type="checkbox" id="lang" hidden>
+                        <div class="radioShap">
+                            <span></span>
+                        </div>
+                        <span class="ar">عربي</span>
+                        <span class="en">ENG</span>
+                    </label>
+
+
+
+                </div>
+            </div>
+        </header>
+        <div class="body-content">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <div class="fixed_card s-space">
+                            <h5 class="text-center mb-2 ">تسجيل دخول </h5>
+                            <div class="text-muted text-center "> برجاء ادخال رقم جوالك وكلمة المرور </div>
+                            <form action="package.html">
+                                <div class="form-group">
+                                    <label class="form-label phoneInput" for="num"><span class="m-end-5">رقم
+                                            الجوال</span><span class="text-danger f-16">*</span></label>
+                                    <input type="number" class="form-control " id="num"
+                                        placeholder="الرجاء ادخال رقم الجوال ">
+                                </div>
+                                <div class="form-group position-relative">
+                                    <label class="form-label " for="name"><span class="m-end-5">كلمة المرور
+                                        </span><span class="text-danger f-16">*</span></label>
+                                    <input type="password" class="form-control password" id="password"
+                                        placeholder="الرجاء ادخال كلمة المرور">
+                                    <div class="input_icon eye" data-id="password">
+                                        <i class="fa-regular fa-eye-slash"></i>
+                                        <!-- <i class="fa-regular fa-eye"></i> -->
+                                    </div>
+                                </div>
+                                <a  href="password_recovery.html" class="d-block form-group text-end main-color font-weight-bold">
+                                    نسيت كلمة المرور ؟
+                                </a>
+                                <button class="btn main_btn butn__new w-100 form-group">
+                                    تسجيل دخولك
+                                </button>
+                                <a href="register.html"
+                                    class="text-center text-bold text-dark d-block font-weight-bold">
+                                    <span> ليس لديك حساب ؟</span> <span class="main-color">انشاء حساب اخر </span>
+                                </a>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ________________ // loader // ________________ -->
+        <div class="loader">
+            <img src="img/logo_one.png" alt="" class="logoWhite animate__flip animate__animated">
+        </div>
+        <!-- _______________ // end_Page // _______________ -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/select2.min.js"></script>
+        <script src="js/flatpicker.min.js"></script>
+        <!-- // main-script //  -->
+        <script src="js/script.js"></script>
+        <script>
+            // ///////////////////////////////////
+            $(document).ready(function () {
+                $('.js-example-basic-multiple').select2();
+            });
+            let allLinks = document.querySelectorAll(".side_menu_ul li a ");
+
+            allLinks.forEach((link) => {
+                if (link.href == location.href) {
+                    link.parentElement.classList.add('active')
+                } else if (link.href !== location.href) {
+                    link.parentElement.classList.remove('active');
+                }
+            })
+        </script>
+
+</body>
+<script>
+    document.querySelector('#lang').onchange = function () {
+        if (document.querySelector('#lang').checked) {
+            document.querySelector('.en').style.display = 'block'
+            document.querySelector('.ar').style.display = 'none'
+
+        } else {
+            document.querySelector('.ar').style.display = 'block'
+            document.querySelector('.en').style.display = 'none'
+
+
+        }
+    }
+
+    let passwords = document.querySelectorAll(".password");
+    let eyes = document.querySelectorAll('.eye')
+    eyes.forEach(eye => {
+        eye.onclick = function () {
+            passwords.forEach(pass => {
+                if (pass.value == '') {
+                    return
+                } else {
+                    if (pass.id == eye.dataset.id) {
+                        let type = pass.getAttribute('type') === 'password' ? 'text' : 'password';
+                        pass.setAttribute("type", type);
+                        if (pass.getAttribute('type') === 'password' || pass.value == "") {
+                            eye.querySelector('.fa-regular').classList.add('fa-eye-slash')
+                            eye.querySelector('.fa-regular').classList.remove('fa-eye')
+                        } else if (pass.getAttribute('type') === 'text') {
+                            eye.querySelector('.fa-regular').classList.remove('fa-eye-slash')
+                            eye.querySelector('.fa-regular').classList.add('fa-eye')
+                        }
+                    }
+                }
+
+
+            })
+        }
+
+    });
+</script>
+
+</html>

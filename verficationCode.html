@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <!-- meta  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- // bootstrab // -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <!-- flatPicker -->
+    <link rel="stylesheet" href="css/flatpickr.min.css">
+    <!-- // fontawesome // -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- // css // -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/en-style.css"> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main" class="w-100">
+        <header class="dashboard_topper">
+            <div class="container">
+                <div class="flex-between">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="logo" class="logo">
+                    </a>
+                    <label for="lang" class="containRadio">
+                        <input type="checkbox" id="lang" hidden>
+                        <div class="radioShap">
+                            <span></span>
+                        </div>
+                        <span class="ar">عربي</span>
+                        <span class="en">ENG</span>
+                    </label>
+                </div>
+            </div>
+        </header>
+        <div class="body-content">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <div class="s-space fixed_card ">
+                            <h5 class="text-center mb-2 "> كود التفعيل </h5>
+                            <div class="text-muted text-center mb-2"> برجاءادخال كودالتفعيل</div>
+                            <!-- action to index if you route from register -->
+                            <form action="password_recovery2.html">
+                                <div class="flex-center mb-3">
+                                    <input type="number" class="pin" maxlength="6" autofocus />
+                                </div>
+                                <a href="verficationCode.html" class="text-dark text-center d-block form-group"> <span>
+                                        لم يصلك كود ؟
+                                    </span><span class="main-color">اعادة ارسال</span> </a>
+                                <button type="button" class="w-100 btn main_btn butn__new mb-3"  data-toggle="modal" data-target="#certainModalNum">تأكيد </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal -- new login -- -->
+        <div class="modal fade" id="certainModalNum" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog  modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h5 class="text-center mb-2 ">  سيتم الرد عليك عند قبول الادراه   </h5>
+                        <img src="img/changeDone.png" alt="change_num" class="modalChange w-50">
+                   <a href="login.html"  class="w-100 btn main_btn mb-3">تسجيل الدخول </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ________________ // loader // ________________ -->
+    <div class="loader">
+        <img src="img/logo_one.png" alt="" class="logoWhite animate__flip animate__animated">
+    </div>
+    <!-- _______________ // end_Page // _______________ -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/flatpicker.min.js"></script>
+    <script type="text/javascript" src="js/jquery.segmentedInput.js"></script>
+    <!-- // main-script //  -->
+    <script src="js/script.js"></script>
+    <script>
+        document.querySelector('#lang').onchange = function () {
+            if (document.querySelector('#lang').checked) {
+                document.querySelector('.en').style.display = 'block'
+                document.querySelector('.ar').style.display = 'none'
+
+            } else {
+                document.querySelector('.ar').style.display = 'block'
+                document.querySelector('.en').style.display = 'none'
+            }
+        }
+        $(document).ready(function () {
+            $('.pin').segmentedInput({
+                fieldClasses: 'class1 class2'
+            });
+        });
+    </script>
+
+</body>
+
+
+</html>

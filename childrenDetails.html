@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <!-- meta  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- // bootstrab // -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+
+    <!-- datatable -->
+    <link rel="stylesheet" href="css/dataTables.css">
+    <link rel="stylesheet" href="css/responsive.dataTables.min.css">
+    <!-- datepicker -->
+    <link rel="stylesheet" href="css/flatpickr.min.css">
+    <!-- // fontawesome // -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- video -->
+    <link href="css/video.min.css" rel="stylesheet" />
+    <!-- // css // -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/en-style.css"> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="side_menu d-flex flex-column ">
+        <a href="" class=" contain_dashboard_logo  mb-20 ">
+            <img src="img/logo.png" alt="logo" class="logo">
+        </a>
+        <ul class="side_menu_ul active">
+            <li class="about_section active">
+                <a href="index.html" class="d-flex align-items-center  ">
+                    <img src="img/home.png" alt="home" class="side_menu_icon">
+                    <span class="hide-section m-start-10"> الحاضنات </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="parents.html" class="d-flex align-items-center  ">
+                    <img src="img/Parents.png" alt="Parents" class="side_menu_icon">
+                    <span class="hide-section m-start-10"> أولياء الامور </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="children.html" class="d-flex align-items-center ">
+                    <img src="img/children.png" alt="childre" class="side_menu_icon">
+                    <span class="hide-section m-start-10">الأطفال </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="package_after_login.html" class="d-flex align-items-center   ">
+                    <img src="img/package.png" alt="package" class="side_menu_icon">
+                    <span class="hide-section m-start-10"> الباقات </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="QR_Code.html" class="d-flex align-items-center   ">
+                    <img src="img/qr-code.png" alt="package" class="side_menu_icon">
+                    <span class="hide-section m-start-10"> QR Code </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="lang.html" class="d-flex align-items-center  ">
+                    <img src="img/setting.png" alt="lang" class="side_menu_icon">
+                    <span class="hide-section m-start-10"> اللغة </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="privacy_policy.html" class="d-flex align-items-center  ">
+                    <img src="img/comment.png" alt="comment" class="side_menu_icon">
+                    <span class="hide-section m-start-10"> سياسة الخصوصيه </span>
+                </a>
+            </li>
+
+            <li class="about_section">
+                <a href="terms_and_condition.html" class="d-flex align-items-center  ">
+                    <img src="img/TermsAndCondition.png" alt="comment" class="side_menu_icon">
+                    <span class="hide-section m-start-10 "> الشروط والأحكام </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="contactUs.html" class="d-flex align-items-center  ">
+                    <img src="img/contact.png" alt="contact" class="side_menu_icon">
+                    <span class="hide-section m-start-10 "> تواصل معنا </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="data.html" class="d-flex align-items-center  ">
+                    <img src="img/contact.png" alt="myData" class="side_menu_icon">
+                    <span class="hide-section m-start-10 "> بياناتي </span>
+                </a>
+            </li>
+
+            <li class="about_section ">
+                <a href="login.html" class="d-flex align-items-center  ">
+                    <img src="img/noun_logout.png" alt="logOut" class="side_menu_icon logOut">
+                    <span class="hide-section m-start-10"> تسجيل الخروج </span>
+                </a>
+            </li>
+
+
+        </ul>
+    </div>
+    <div id="main">
+        <header class="dashboard_topper">
+            <div class="container">
+                <div class="flex-between">
+
+                    <img src="img/toggle_Side.png" alt="toggleSide" class="toggleSide">
+
+                    <div class="d-flex flex-wrap gap-20">
+
+
+                        <a href="notification.html" class="contain-notification">
+                            <img src="img/notification.png" alt="notification" class="notificationImg" />
+                            <div class="notificationCount">
+                                3
+                            </div>
+                        </a>
+                        <div class="flex-center gap-5">
+                            <img src="img/waving-hand.png" alt="welcome" class="welcomeImg">
+                            <span> اهلا محمد </span>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </header>
+        <div class="body-content">
+            <div class="container">
+                <div class="overflow-hidden">
+                    <div class=" animate__fadeInRight animate__animated">
+                        <div class="flex-between  mb-4">
+                            <div>
+                                <h5 class="font-weight-bold mb-2"> تفاصيل الطفل </h5>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb p-0 bg-transparent">
+                                        <li class="breadcrumb-item "><a href="children.html" class="text-muted"> اولياء
+                                                الاطفال
+                                            </a></li>
+                                        <li class="breadcrumb-item active main-color" aria-current="page"> تفاصيل
+                                            تفاصيل الطفل </li>
+                                    </ol>
+                                </nav>
+                            </div>
+                            <button class="btn main_btn lg_btn gray_btn butn__new" data-toggle="modal" data-target="#add"> تعديل
+                                بيانات الطفل </button>
+                        </div>
+                        <div class="fixed_card p-0 mb-4 d-flex justify-content-between overflow-auto text-nowrap ">
+                            <div
+                                class="d-flex m-3 align-items-center flex-grow-1 justify-content-between  gap-10">
+                                <div><img src="img/user.png" alt="" class="userImgDetails"></div>
+                                <div class="text-center">
+                                    <h6 class="space-gray mb-2"> الاسم </h6>
+                                    <span class="text-muted"> نها احمد </h6>
+                                </div>
+                                <div class="text-center">
+                                    <h6 class="space-gray mb-2">   تاريخ الميلاد   </h6>
+                                    <span class="text-muted"> 20/1/20 </h6>
+                                </div>
+                                <div class="text-center">
+                                    <h6 class="space-gray mb-2"> السن </h6>
+                                    <span class="text-muted"> 30 </h6>
+                                </div>
+                                <div class="text-center">
+                                    <h6 class="space-gray mb-2"> عدد مرات الحضور  </h6>
+                                    <h6 class="text-muted"> 1111111 </h6>
+                                </div>
+                                <div class="text-center">
+                                    <h6 class="space-gray  mb-2"> ولي الامر  </h6>
+                                    <h6 class="text-muted"> 3</h6>
+                                </div>
+                                <div class="text-center">
+                                    <h6 class="space-gray  mb-2"> الحاضنة   </h6>
+                                    <select class="select2" name="state">
+                                        <option value="AL"> اسماء </option>
+                                        <option value="WY">اميره</option>
+                                        <option value="WY">ياسمين</option>
+
+                                      </select>
+                                </div>
+                            </div>
+                            <div class="containBtnBox">
+                                <button class="btn  border-bottom m-auto d-block border-bottom text-light"
+                                    data-toggle="modal" data-target="#delete">
+                                    <span class="m-end-10">حذف</span><i class="fa-solid fa-trash-can"></i></button>
+                                <!-- <hr> -->
+                                <button class="btn  border-0 m-auto d-block border-bottom text-light"
+                                    data-toggle="modal" data-target="#Deactivate"><span class="m-end-10"> الغاء تفعيل
+                                    </span><span><i class="fa-solid fa-ban"></i></span></button>
+
+                            </div>
+                        </div>
+                        <ul class="nav nav-tabs  childrenDetails-navs flex-center gap-10 mb-4" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-toggle="tab" data-target="#home"
+                                    type="button" role="tab" aria-controls="home" aria-selected="true"> الأنشطة </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-toggle="tab" data-target="#profile"
+                                    type="button" role="tab" aria-controls="profile" aria-selected="false">
+                                    الحضور
+                                </button>
+                            </li>
+
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <!-- ////// -->
+                                <div class="accordion childrenCollaps" id="accordionExample">
+                                    <div class="card">
+                                        <div class="card-header panel-heading  p-0" id="headingOne">
+                                            <h6 class="mb-0">
+                                                <button class="btn btn-link btn-block text-right flex-between"
+                                                    type="button" data-toggle="collapse" data-target="#collapseOne"
+                                                    aria-expanded="true" aria-controls="collapseOne">
+                                                    <span> 5/5/23</span>
+                                                    <i class="fa-solid fa-chevron-up"></i>
+                                                </button>
+                                            </h6>
+                                        </div>
+
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="d-flex gap-10 align-items-center mb-3">
+                                                            <img src="img/childDetails.png" alt="childDetails"
+                                                                class="childDetails">
+                                                            <div>
+                                                                <h6 class="mb-2">الطفل كان يلعب </h6>
+                                                                <div class="space-gray">
+                                                                    <span>6/5/2023</span> <span>6:30</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="img/creative-1w20Cysy1cg-unsplash.png"
+                                                            class="contain_Child_det mb-3">
+                                                            <img src="img/creative-1w20Cysy1cg-unsplash.png" alt=""
+                                                                class="contain_Child_det">
+                                                        </a>
+
+
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="d-flex gap-10 align-items-center mb-3">
+                                                            <img src="img/childDetails2.png" alt="childDetails"
+                                                                class="childDetails">
+                                                            <div>
+                                                                <h6 class="mb-2">الطفل كان يرسم </h6>
+                                                                <div class="space-gray">
+                                                                    <span>6/5/2023</span> <span>6:30</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <video id="my-video" class="video-js vjs-theme-city" controls
+                                                            preload="auto" 
+                                                            poster="img/thumbnail.jpeg" data-setup="{}">
+                                                            <source src="img/vid.mp4" type="video/mb4" />
+                                                            <source src="img/vid.mp4" type="video/webm" />
+                                                            <p class="vjs-no-js">
+                                                                To view this video please enable JavaScript, and
+                                                                consider upgrading to a
+                                                                web browser that
+                                                                <a href="https://videojs.com/html5-video-support/"
+                                                                    target="_blank">supports HTML5 video</a>
+                                                            </p>
+                                                        </video>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header panel-heading p-0" id="headingTwo">
+                                            <h6 class="mb-0">
+                                                <button class="btn btn-link btn-block text-right collapsed flex-between"
+                                                    type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                    <span>5/5/23</span>
+                                                    <i class="fa-solid fa-chevron-up"></i>
+                                                </button>
+                                            </h6>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="d-flex gap-10 align-items-center mb-3">
+                                                            <img src="img/childDetails.png" alt="childDetails"
+                                                                class="childDetails">
+                                                            <div>
+                                                                <h6 class="mb-2">الطفل كان يلعب </h6>
+                                                                <div class="space-gray">
+                                                                    <span>6/5/2023</span> <span>6:30</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="img/creative-1w20Cysy1cg-unsplash.png"
+                                                            class="contain_Child_det">
+                                                            <img src="img/creative-1w20Cysy1cg-unsplash.png" alt=""
+                                                                class="contain_Child_det">
+                                                        </a>
+
+
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="d-flex gap-10 align-items-center mb-3">
+                                                            <img src="img/childDetails2.png" alt="childDetails"
+                                                                class="childDetails">
+                                                            <div>
+                                                                <h6 class="mb-2">الطفل كان يرسم </h6>
+                                                                <div class="space-gray">
+                                                                    <span>6/5/2023</span> <span>6:30</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <video id="my-video2" class="video-js vjs-theme-city" controls
+                                                            preload="auto"
+                                                            poster="img/thumbnail.jpeg" data-setup="{}">
+                                                            <source src="img/vid.mp4" type="video/mb4" />
+                                                            <source src="img/vid.mp4" type="video/webm" />
+                                                            <p class="vjs-no-js">
+                                                                To view this video please enable JavaScript, and
+                                                                consider upgrading to a
+                                                                web browser that
+                                                                <a href="https://videojs.com/html5-video-support/"
+                                                                    target="_blank">supports HTML5 video</a>
+                                                            </p>
+                                                        </video>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header panel-heading p-0" id="headingThree">
+                                            <h6 class="mb-0">
+                                                <button class="btn btn-link btn-block text-right collapsed flex-between"
+                                                    type="button" data-toggle="collapse" data-target="#collapseThree"
+                                                    aria-expanded="false" aria-controls="collapseThree">
+                                                    <span>5/5/23</span>
+                                                    <i class="fa-solid fa-chevron-up"></i>
+                                                </button>
+                                            </h6>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="d-flex gap-10 align-items-center mb-3">
+                                                            <img src="img/childDetails.png" alt="childDetails"
+                                                                class="childDetails">
+                                                            <div>
+                                                                <h6 class="mb-2">الطفل كان يلعب </h6>
+                                                                <div class="space-gray">
+                                                                    <span>6/5/2023</span> <span>6:30</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="img/creative-1w20Cysy1cg-unsplash.png"
+                                                            class="contain_Child_det">
+                                                            <img src="img/creative-1w20Cysy1cg-unsplash.png" alt=""
+                                                                class="contain_Child_det">
+                                                        </a>
+
+
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="d-flex gap-10 align-items-center mb-3">
+                                                            <img src="img/childDetails2.png" alt="childDetails"
+                                                                class="childDetails">
+                                                            <div>
+                                                                <h6 class="mb-2">الطفل كان يرسم </h6>
+                                                                <div class="space-gray">
+                                                                    <span>6/5/2023</span> <span>6:30</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <video id="my-video3" class="video-js vjs-theme-city" controls
+                                                            preload="auto"
+                                                            poster="img/thumbnail.jpeg" data-setup="{}">
+                                                            <source src="img/vid.mp4" type="video/mb4" />
+                                                            <source src="img/vid.mp4" type="video/webm" />
+                                                            <p class="vjs-no-js">
+                                                                To view this video please enable JavaScript, and
+                                                                consider upgrading to a
+                                                                web browser that
+                                                                <a href="https://videojs.com/html5-video-support/"
+                                                                    target="_blank">supports HTML5 video</a>
+                                                            </p>
+                                                        </video>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ////// -->
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="contain-table">
+                                    <table id="table" class="project_table display responsive nowrap">
+                                        <thead>
+                                            <tr>
+    
+                                                <th> التاريخ </th>
+                                                <th> اليوم </th>
+                                                <th> الحالة </th>
+                                                <th> تسجيل الدخول </th>
+                                                <th> تسجيل الخروج</th>
+                                                <th> عدد الساعات </th>
+    
+                                            </tr>
+                                        </thead>
+    
+                                        <tbody class="my-10">
+                                            <tr>
+                                                <td> 20/8/23</td>
+                                                <td> الاحد</td>
+                                                <td>حاضر</td>
+                                                <td><span>10:00</span><span>am</span></td>
+                                                <td><span>5:30</span><span>am</span></td>
+                                                <td><span>5</span><span>ساعات</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td> 20/8/23</td>
+                                                <td> الاحد</td>
+                                                <td>حاضر</td>
+                                                <td><span>10:00</span><span>am</span></td>
+                                                <td><span>5:30</span><span>am</span></td>
+                                                <td><span>5</span><span>ساعات</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td> 20/8/23</td>
+                                                <td> الاحد</td>
+                                                <td>حاضر</td>
+                                                <td><span>10:00</span><span>am</span></td>
+                                                <td><span>5:30</span><span>am</span></td>
+                                                <td><span>5</span><span>ساعات</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td> 20/8/23</td>
+                                                <td> الاحد</td>
+                                                <td>حاضر</td>
+                                                <td><span>10:00</span><span>am</span></td>
+                                                <td><span>5:30</span><span>am</span></td>
+                                                <td><span>5</span><span>ساعات</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td> 20/8/23</td>
+                                                <td> الاحد</td>
+                                                <td>حاضر</td>
+                                                <td><span>10:00</span><span>am</span></td>
+                                                <td><span>5:30</span><span>am</span></td>
+                                                <td><span>5</span><span>ساعات</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td> 20/8/23</td>
+                                                <td> الاحد</td>
+                                                <td>حاضر</td>
+                                                <td><span>10:00</span><span>am</span></td>
+                                                <td><span>5:30</span><span>am</span></td>
+                                                <td><span>5</span><span>ساعات</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td> 20/8/23</td>
+                                                <td> الاحد</td>
+                                                <td>حاضر</td>
+                                                <td><span>10:00</span><span>am</span></td>
+                                                <td><span>5:30</span><span>am</span></td>
+                                                <td><span>5</span><span>ساعات</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td> 20/8/23</td>
+                                                <td> الاحد</td>
+                                                <td>حاضر</td>
+                                                <td><span>10:00</span><span>am</span></td>
+                                                <td><span>5:30</span><span>am</span></td>
+                                                <td><span>5</span><span>ساعات</span></td>
+                                            </tr>
+    
+    
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- modal-add-person -->
+    <div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form class="position-relative">
+
+                        <div class="closeModalIcon" data-dismiss="modal"><i class="fa-regular fa-circle-xmark"></i>
+                        </div>
+                        <div class="form-group text-center">
+                            <h6 class="mb-4"> تعديل طفل </h6>
+                            <label for="file" class="position-relative m-auto img_gallery">
+                                <input type="file" onchange="readURL(this);" id="file" hidden="">
+                                <div class="edit_icon">
+                                    <i class="fa-regular fa-image f-20"></i></i>
+                                </div>
+                                <div class="containImgPrev">
+                                    <img id="imgPrev" src="img/user.png" alt="userPic">
+                                </div>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label phoneInput" for="name"><span class="m-end-5">
+                                    اسم الطفل</span><span class="text-danger f-16">*</span></label>
+                            <input type="text" class="form-control " id="name" placeholder=" الرجاء ادخال اسم الطفل ">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label phoneInput" for="birthdate"><span class="m-end-5">
+                                    تاريخ الميلاد </span><span class="text-danger f-16">*</span></label>
+                            <input type="date" class="form-control" id="birthdate"
+                                placeholder="  الرجاء ادخال تاريخ الميلاد ">
+                        </div>
+                        <button class="btn main_btn w-100 form-group butn__new" type="submit" data-dismiss="modal"
+                            data-toggle="modal" data-target="#certainModal">
+                            حفظ التعديلات
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal-change -->
+    <div class="modal fade" id="certainModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h5 class="text-center mb-2 "> تم حفظ التعديلات بنجاح</h5>
+                    <img src="img/changeDone.png" alt="change_num" class="modalChange">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal-alert-change -->
+    <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form class="position-relative">
+                        <div class="closeModalIcon" data-dismiss="modal"><i class="fa-regular fa-circle-xmark"></i>
+                        </div>
+                        <h6 class="text-center text-muted">هل بالفعل تريد حذف الطفل </h6>
+                        <div class="text-center">
+                            <img src="img/alert.png" alt="alert" class="alert">
+                        </div>
+                        <div class="flex-center gap-10 flex-wrap">
+                            <button class="btn main_btn butn__new" data-dismiss="modal">لا،رجوع</button>
+                            <button class="btn main_btn danger" data-toggle="modal" data-target="#certainModalDel"
+                                data-dismiss="modal">نعم،حذف</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal-change -->
+    <div class="modal fade" id="certainModalDel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class=" position-relative">
+                        <div class="closeModalIcon" data-dismiss="modal"><i class="fa-regular fa-circle-xmark"></i>
+                        </div>
+                        <h6 class="text-center mb-2 text-muted "> تم حذف  الطفل  </h6>
+                        <img src="img/check.png" alt="change_num" class="doneImg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal-alert-change -->
+    <div class="modal fade" id="Deactivate" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form class="position-relative">
+                        <div class="closeModalIcon" data-dismiss="modal"><i class="fa-regular fa-circle-xmark"></i>
+                        </div>
+                        <h6 class="text-center text-muted">هل بالفعل تريد الغاء تفعيل الطفل ؟ </h6>
+                        <div class="text-center">
+                            <img src="img/alert.png" alt="alert" class="alert">
+                        </div>
+                        <div class="flex-center gap-10 flex-wrap">
+                            <button class="btn main_btn butn__new" data-dismiss="modal">لا،رجوع</button>
+                            <button class="btn main_btn danger" data-toggle="modal"
+                                data-target="#certainModalDeactivate" data-dismiss="modal">نعم </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal-change -->
+    <div class="modal fade" id="certainModalDeactivate" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class=" position-relative">
+                        <div class="closeModalIcon" data-dismiss="modal"><i class="fa-regular fa-circle-xmark"></i>
+                        </div>
+                        <h6 class="text-center mb-2 text-muted "> تم الغاء تفعيل  الطفل </h5>
+                            <img src="img/check.png" alt="change_num" class="doneImg">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal-add-person -->
+    <div class="modal fade" id="addChild" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form class="position-relative">
+                        <div class="closeModalIcon" data-dismiss="modal"><i class="fa-regular fa-circle-xmark"></i>
+                        </div>
+                        <div class="closeModalIcon" data-dismiss="modal"><i class="fa-regular fa-circle-xmark"></i>
+                        </div>
+                        <div class="form-group text-center">
+                            <h6 class="mb-4"> اضافة طفل </h6>
+                            <label for="file" class="position-relative m-auto img_gallery">
+                                <input type="file" onchange="readURL(this);" id="file" hidden="">
+                                <div class="edit_icon">
+                                    <i class="fa-regular fa-image f-20"></i></i>
+                                </div>
+                                <div class="containImgPrev">
+                                    <img id="imgPrev" src="" alt="userPic">
+                                </div>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label phoneInput" for="name"><span class="m-end-5">
+                                    اسم الطفل</span><span class="text-danger f-16">*</span></label>
+                            <input type="text" class="form-control " id="name" placeholder=" الرجاء ادخال اسم الطفل ">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label phoneInput" for="birthdate"><span class="m-end-5">
+                                    تاريخ الميلاد </span><span class="text-danger f-16">*</span></label>
+                            <input type="date" class="form-control" id="birthdate"
+                                placeholder="  الرجاء ادخال تاريخ الميلاد ">
+                        </div>
+                        <button class="btn main_btn butn__new form-group" type="submit" data-dismiss="modal"
+                            data-toggle="modal" data-target="#certainModalNotice">
+                            اضافة
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal-send-success -->
+    <div class="modal fade" id="certainModalNotice" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="position-relative">
+                        <div class="closeModalIcon" data-dismiss="modal"><i class="fa-regular fa-circle-xmark"></i>
+                        </div>
+                        <h6 class="text-center mb-2  text-muted"> تم ارسال الاشعارات بنجاح </h6>
+                        <img src="img/check.png" alt="change_num" class="doneImg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ________________ // loader // ________________ -->
+    <div class="loader">
+        <img src="img/logo.png" alt="" class="logoWhite  animate__zoomIn  animate__animated">
+    </div>
+    <!-- _______________ // end_Page // _______________ -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/flatpicker.min.js"></script>
+    <script src="js/video.min.js"></script>
+    <script src="js/dataTables.js"></script>
+    <script src="js/dataTables.responsive.min.js"></script>
+    <!-- <script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script> -->
+    <!-- // main-script //  -->
+    <script src="js/script.js"></script>
+    <script>
+        // ///////////////////////////////
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#imgPrev')
+                        .attr('src', e.target.result);
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        // ////////////////////////////////
+        $("#birthdate").flatpickr({
+            enableTime: true,
+            dateFormat: "Y-m-d H:i",
+        });
+        // ////////////////////////////////
+        document.querySelector('.toggleSide').onclick = function () {
+            // console.log
+            document.querySelector('.side_menu').classList.toggle('sm')
+            document.querySelector('#main').classList.toggle('active')
+
+
+            if (document.querySelector('.side_menu').classList.contains('sm')) {
+                document.querySelector('#main').classList.add('active')
+                document.querySelector('.toggleSide').classList.add('active')
+            } else {
+                document.querySelector('#main').classList.remove('active')
+                document.querySelector('.toggleSide').classList.remove('active')
+            }
+        }
+        // ///////////////////////////////////
+        $(document).ready(function () {
+            $('.js-example-basic-multiple').select2();
+        });
+        let allLinks = document.querySelectorAll(".side_menu_ul li a ");
+
+        allLinks.forEach((link) => {
+            if (link.href == location.href) {
+                link.parentElement.classList.add('active')
+            } else if (link.href !== location.href) {
+                link.parentElement.classList.remove('active');
+            }
+        })
+        $('table').DataTable({
+            responsive: true,
+                scrollCollapse: true,
+                columnDefs: [
+                    // { className: "desktop", "targets": [2], "responsivePriority": "2" },
+                    // { className: "mobile-l", "targets": [2], "responsivePriority": 3 },
+                    // tablet-p//mobile-l// mobile-p
+                    { responsivePriority: 2, targets: -1 }
+                ],
+            info: false,
+            searching: false,
+            "bPaginate": false,
+            "sortable": false,
+            searching: true,
+            lengthChange: false,
+            info: false,
+            ordering: false,
+        });
+        // link external search // disable search with css not option 
+        $('#searchInput').keyup(function () {
+            var table = $('.project_table').DataTable();
+            table.search($(this).val()).draw();
+        });
+        // ////////////////////////////
+        let passwords = document.querySelectorAll(".password");
+        let eyes = document.querySelectorAll('.eye')
+        eyes.forEach(eye => {
+            eye.onclick = function () {
+                passwords.forEach(pass => {
+                    if (pass.value == '') {
+                        return
+                    } else {
+                        if (pass.id == eye.dataset.id) {
+                            let type = pass.getAttribute('type') === 'password' ? 'text' : 'password';
+                            pass.setAttribute("type", type);
+                            if (pass.getAttribute('type') === 'password' || pass.value == "") {
+                                eye.querySelector('.fa-regular').classList.add('fa-eye-slash')
+                                eye.querySelector('.fa-regular').classList.remove('fa-eye')
+                            } else if (pass.getAttribute('type') === 'text') {
+                                eye.querySelector('.fa-regular').classList.remove('fa-eye-slash')
+                                eye.querySelector('.fa-regular').classList.add('fa-eye')
+                            }
+                        }
+                    }
+                })
+            }
+        });
+        // ///////////////////////////////////
+        $(document).ready(function () {
+            $('.select2').select2();
+        });
+    </script>
+
+</body>
+
+</html>
