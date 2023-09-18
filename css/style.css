@@ -685,6 +685,9 @@ table.dataTable thead th {
   position: absolute;
   left: 60px;
 }
+.searchIcon.withoutBtn{
+  left: 10px;
+}
 .table_footer{
   display: flex;
     justify-content: space-between;
@@ -834,11 +837,11 @@ input.main_btn{
   font-size: 13px;
 }
 
-/* button.main_btn:hover,
-a.main_btn:hover {
-  background-color: transparent;
-  color: var(--main);
-} */
+.btn.h-0[data-dismiss="modal"]{
+  height: unset;
+  padding:  3px 0;
+} 
+
 .transparent_btn {
   background-color: transparent;
   color: var(--main) !important;
@@ -945,6 +948,9 @@ a.main_btn:hover {
 .logo {
   max-width: 95px;
   object-fit: contain;
+}
+.logo.md{
+  max-width: 80px;
 }
 
 @media (max-width:768px) {
@@ -1618,8 +1624,8 @@ input:disabled {
 }
 
 .alert {
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   object-fit: contain;
 }
 
@@ -1789,15 +1795,4 @@ button.collapsed .fa-chevron-up {
      height: 6px;
      width: 0;
   }
-/*::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-  background: #b9b8b8;
-  height: 100px;
-  border-radius: 20px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background-color: #868686;
-} */
 /* //////////////////////////////// */

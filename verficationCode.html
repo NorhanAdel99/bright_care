@@ -49,38 +49,40 @@
                         <div class="s-space fixed_card ">
                             <h5 class="text-center mb-2 "> كود التفعيل </h5>
                             <div class="text-muted text-center mb-2"> برجاءادخال كودالتفعيل</div>
-                            <!-- action to index if you route from register -->
+                            <!-- action to index if you route from forget password action to password_recovery  -->
                             <form action="password_recovery2.html">
                                 <div class="flex-center mb-3">
                                     <input type="number" class="pin" maxlength="6" autofocus />
                                 </div>
+                                <button type="submit" class="w-100 btn main_btn butn__new mb-3">تأكيد </button>
+                                <!-- in case open model from new register -->
+                                <!-- <button type="button" class="w-100 btn main_btn butn__new mb-3"  data-toggle="modal" data-target="#certainModalNum">تأكيد </button> -->
                                 <a href="verficationCode.html" class="text-dark text-center d-block form-group"> <span>
                                         لم يصلك كود ؟
                                     </span><span class="main-color">اعادة ارسال</span> </a>
-                                <button type="button" class="w-100 btn main_btn butn__new mb-3"  data-toggle="modal" data-target="#certainModalNum">تأكيد </button>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- modal -- new login -- -->
+        <!-- modal -- new login in case register -- -->
         <div class="modal fade" id="certainModalNum" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog  modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-body">
-                        <h5 class="text-center mb-2 ">  سيتم الرد عليك عند قبول الادراه   </h5>
+                        <h5 class="text-center mb-2 "> سيتم الرد عليك عند قبول الادراه </h5>
                         <img src="img/changeDone.png" alt="change_num" class="modalChange w-50">
-                   <a href="login.html"  class="w-100 btn main_btn mb-3">تسجيل الدخول </a>
+                        <a href="login.html" class="w-100 btn main_btn mb-3">تسجيل الدخول </a>
 
                     </div>
                 </div>
             </div>
         </div>
     </div>
-     <!-- ________________ // loader // ________________ -->
-     <div class="loader">
+    <!-- ________________ // loader // ________________ -->
+    <div class="loader">
         <img src="img/logo.png" alt="" class="logoWhite  animate__jackInTheBox animate__animated">
     </div>
     <!-- _______________ // end_Page // _______________ -->
@@ -110,8 +112,6 @@
             });
         });
     </script>
-
 </body>
-
 
 </html>

@@ -139,12 +139,10 @@
                             <div>
                                 <form class="d-flex align-items-center  gap-5 position-relative">
                                     <input type="search" class="form-control" id="searchInput"
-                                        placeholder="ابحث باسم الحاضنة - رقم الجوال - الرقم الوظيفي ">
-                                    <i class="fa-solid fa-magnifying-glass searchIcon"></i>
-                                    <button type="button" class="btn main_btn sm p-2" data-toggle="modal"
-                                        data-target="#add">
-                                        <i class="fa-solid fa-plus"></i>
-                                    </button>
+                                        placeholder="ابحث باسم الاطفال ">
+                                    <label for="searchInput" class="m-0 searchIcon withoutBtn"><i
+                                            class="fa-solid fa-magnifying-glass "></i></label>
+                                   
                                 </form>
                             </div>
                         </div>
@@ -374,8 +372,8 @@
             </div>
         </div>
     </div>
-     <!-- ________________ // loader // ________________ -->
-     <div class="loader">
+    <!-- ________________ // loader // ________________ -->
+    <div class="loader">
         <img src="img/logo.png" alt="" class="logoWhite  animate__jackInTheBox animate__animated">
     </div>
     <!-- _______________ // end_Page // _______________ -->
@@ -465,6 +463,33 @@
         $('#searchInput').keyup(function () {
             var table = $('.project_table').DataTable();
             table.search($(this).val()).draw();
+        });
+        // /////////////////////////////////////////////////////
+        let passwords = document.querySelectorAll(".password");
+        let eyes = document.querySelectorAll('.eye')
+        eyes.forEach(eye => {
+            eye.onclick = function () {
+                passwords.forEach(pass => {
+                    if (pass.value == '') {
+                        return
+                    } else {
+                        if (pass.id == eye.dataset.id) {
+                            let type = pass.getAttribute('type') === 'password' ? 'text' : 'password';
+                            pass.setAttribute("type", type);
+                            if (pass.getAttribute('type') === 'password' || pass.value == "") {
+                                eye.querySelector('.fa-regular').classList.add('fa-eye-slash')
+                                eye.querySelector('.fa-regular').classList.remove('fa-eye')
+                            } else if (pass.getAttribute('type') === 'text') {
+                                eye.querySelector('.fa-regular').classList.remove('fa-eye-slash')
+                                eye.querySelector('.fa-regular').classList.add('fa-eye')
+                            }
+                        }
+                    }
+
+
+                })
+            }
+
         });
     </script>
 

@@ -141,7 +141,7 @@
                             <div>
                                 <form class="d-flex align-items-center  gap-5 position-relative">
                                     <input type="search" class="form-control" id="searchInput"
-                                        placeholder="ابحث باسم الحاضنة - رقم الجوال - الرقم الوظيفي ">
+                                        placeholder="ابحث باسم ولي الامر - رقم الجوال - الرقم الوظيفي ">
                                     <i class="fa-solid fa-magnifying-glass searchIcon"></i>
                                     <button type="button" class="btn main_btn butn__new sm p-2" data-toggle="modal"
                                         data-target="#add">
@@ -521,7 +521,7 @@
                         <div class="closeModalIcon" data-dismiss="modal"><i class="fa-regular fa-circle-xmark"></i>
                         </div>
                         <div class="form-group text-center">
-                            <h6 class="mb-4"> ارفع صورة الحاضنة </h6>
+                            <h6 class="mb-4"> ارفع صورة ولي الامر </h6>
                             <label for="file" class="position-relative m-auto img_gallery">
                                 <input type="file" onchange="readURL(this);" id="file" hidden="">
                                 <div class="edit_icon">
@@ -534,15 +534,20 @@
                         </div>
                         <div class="form-group">
                             <label class="form-label phoneInput" for="name"><span class="m-end-5">
-                                    اسم الحاضنة</span><span class="text-danger f-16">*</span></label>
+                                    اسم ولي الامر</span><span class="text-danger f-16">*</span></label>
                             <input type="text" class="form-control " id="name" placeholder=" نها احمد">
                         </div>
                         <div class="form-group ">
                             <label class="form-label phoneInput" for="num"><span class="m-end-5">رقم
-                                    الجوال</span><span class="text-danger f-16">*</span></label>
+                                    الجوال الاول</span><span class="text-danger f-16">*</span></label>
                             <input type="number" class="form-control " id="num" placeholder="010000100 ">
-
                         </div>
+                        <div class="form-group ">
+                            <label class="form-label phoneInput" for="num2"><span class="m-end-5">رقم
+                                    الجوال الثاني</span><span class="text-danger f-16">*</span></label>
+                            <input type="number" class="form-control " id="num" placeholder="010000100 ">
+                        </div>
+
                         <div class="form-group ">
                             <label class="form-label phoneInput" for="num"><span class="m-end-5"> الرقم الوظيفي
                                 </span><span class="text-danger f-16">*</span></label>
@@ -578,8 +583,35 @@
             </div>
         </div>
     </div>
-     <!-- ________________ // loader // ________________ -->
-     <div class="loader">
+    <!-- modal-change number done -->
+    <div class="modal fade" id="certainModalNum" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h5 class="text-center mb-2 "> تم اضافة ولي الامر بنجاح </h5>
+                    <img src="img/changeDone.png" alt="change_num" class="modalChange">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal-map -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div id="map" style="width:100%;height:300px"></div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn main_btn butn__new" data-dismiss="modal">العودة </button>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <!-- ________________ // loader // ________________ -->
+    <div class="loader">
         <img src="img/logo.png" alt="" class="logoWhite  animate__jackInTheBox animate__animated">
     </div>
     <!-- _______________ // end_Page // _______________ -->

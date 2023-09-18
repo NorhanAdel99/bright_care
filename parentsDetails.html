@@ -154,12 +154,12 @@
                                     </ol>
                                 </nav>
                             </div>
-                            <button class="btn main_btn lg_btn gray_btn butn__new" data-toggle="modal" data-target="#add"> تعديل
+                            <button class="btn main_btn lg_btn gray_btn butn__new" data-toggle="modal"
+                                data-target="#add"> تعديل
                                 بيانات ولي الامر </button>
                         </div>
                         <div class="fixed_card p-0 mb-4 d-flex justify-content-between overflow-auto text-nowrap ">
-                            <div
-                                class="d-flex m-3 align-items-center flex-grow-1 justify-content-between  gap-10">
+                            <div class="d-flex m-3 align-items-center flex-grow-1 justify-content-between  gap-10">
                                 <div><img src="img/user.png" alt="" class="userImgDetails"></div>
                                 <div class="text-center">
                                     <h6 class="space-gray mb-2"> الاسم </h6>
@@ -188,7 +188,7 @@
                                     <span class="m-end-10">حذف</span><i class="fa-solid fa-trash-can"></i></button>
                                 <!-- <hr> -->
                                 <button class="btn  border-0 m-auto d-block border-bottom text-light"
-                                    data-toggle="modal" data-target="#Deactivate"><span class="m-end-10"> الغاء تفعيل
+                                    data-toggle="modal" data-target="#Deactivate"><span class="m-end-10"> الغاء ظهور
                                     </span><span><i class="fa-solid fa-ban"></i></span></button>
 
                             </div>
@@ -424,11 +424,15 @@
                             <input type="number" class="form-control " id="num" placeholder="010000100 ">
                         </div>
                         <!-- modal-map -->
-                        <!-- <div class="form-group ">
-                            <label class="form-label phoneInput" for="num"><span class="m-end-5"> الرقم 
-                                </span><span class="text-danger f-16">*</span></label>
-                            <input type="number" class="form-control " id="num" placeholder="010000100 ">
-                        </div> -->
+                        <div class="form-group containInputIcon">
+                            <label class="form-label" for="location1"><span class="m-end-5"> العنوان</span><span
+                                    class="text-danger f-16">*</span></label>
+                            <input type="text" class="form-control form-input address" id="location1"
+                                placeholder="الرياض" data-toggle="modal" data-target="#exampleModal2"
+                                data-dismiss="modal">
+                            <label class="input_icon" for="location1"><i class="fa-solid fa-location-dot "></i></label>
+
+                        </div>
                         <div class="form-group position-relative">
                             <label class="form-label " for="password2"><span class="m-end-5"> كلمة المرور
                                 </span><span class="text-danger f-16">*</span></label>
@@ -483,8 +487,8 @@
                             <img src="img/alert.png" alt="alert" class="alert">
                         </div>
                         <div class="flex-center gap-10 flex-wrap">
-                            <button class="btn main_btn butn__new" data-dismiss="modal">لا،رجوع</button>
-                            <button class="btn main_btn danger" data-toggle="modal" data-target="#certainModalDel"
+                            <button class="btn main_btn butn__new h-0" data-dismiss="modal">لا،رجوع</button>
+                            <button class="btn main_btn danger h-0" data-toggle="modal" data-target="#certainModalDel"
                                 data-dismiss="modal">نعم،حذف</button>
                         </div>
 
@@ -519,13 +523,13 @@
                     <form class="position-relative">
                         <div class="closeModalIcon" data-dismiss="modal"><i class="fa-regular fa-circle-xmark"></i>
                         </div>
-                        <h6 class="text-center text-muted">هل بالفعل تريد الغاء تفعيل ولي الامر ؟ </h6>
+                        <h6 class="text-center text-muted">هل بالفعل تريد الغاء ظهور ولي الامر ؟ </h6>
                         <div class="text-center">
                             <img src="img/alert.png" alt="alert" class="alert">
                         </div>
                         <div class="flex-center gap-10 flex-wrap">
-                            <button class="btn main_btn butn__new" data-dismiss="modal">لا،رجوع</button>
-                            <button class="btn main_btn danger" data-toggle="modal"
+                            <button class="btn main_btn butn__new h-0" data-dismiss="modal">لا،رجوع</button>
+                            <button class="btn main_btn danger h-0" data-toggle="modal"
                                 data-target="#certainModalDeactivate" data-dismiss="modal">نعم </button>
                         </div>
 
@@ -543,7 +547,7 @@
                     <div class=" position-relative">
                         <div class="closeModalIcon" data-dismiss="modal"><i class="fa-regular fa-circle-xmark"></i>
                         </div>
-                        <h6 class="text-center mb-2 text-muted "> تم الغاء تفعيل ولي الامر </h5>
+                        <h6 class="text-center mb-2 text-muted "> تم الغاء ظهور ولي الامر </h5>
                             <img src="img/check.png" alt="change_num" class="doneImg">
                     </div>
 
@@ -602,15 +606,29 @@
                     <div class="position-relative">
                         <div class="closeModalIcon" data-dismiss="modal"><i class="fa-regular fa-circle-xmark"></i>
                         </div>
-                        <h6 class="text-center mb-2  text-muted"> تم ارسال الاشعارات بنجاح </h6>
+                        <h6 class="text-center mb-2  text-muted"> تم اضافة الطفل بنجاح   </h6>
                         <img src="img/check.png" alt="change_num" class="doneImg">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-     <!-- ________________ // loader // ________________ -->
-     <div class="loader">
+    <!-- modal-map -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div id="map" style="width:100%;height:300px"></div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn main_btn butn__new" data-dismiss="modal">العودة </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ________________ // loader // ________________ -->
+    <div class="loader">
         <img src="img/logo.png" alt="" class="logoWhite  animate__jackInTheBox animate__animated">
     </div>
     <!-- _______________ // end_Page // _______________ -->
@@ -621,7 +639,9 @@
     <script src="js/select2.min.js"></script>
     <script src="js/flatpicker.min.js"></script>
     <script src="js/dataTables.js"></script>
-    <!-- <script src="js/dataTables.responsive.min.js"></script> -->
+    <script
+        src="https://maps.google.com/maps/api/js?&libraries=places&key=AIzaSyBNLoYGrbnQI_GMqHt6m0PSN9yA7Zvq7gA&callback=initMap"
+        type="text/javascript"></script>
     <!-- // main-script //  -->
     <script src="js/script.js"></script>
     <script>
@@ -629,7 +649,7 @@
         $(document).ready(function () {
             $('.select2').select2({
                 placeholder: "اختر حاضنة ",
-               
+
             });
         });
         // ///////////////////////////////
@@ -740,6 +760,46 @@
             }
 
         });
+         // ////////////////////////////////////////
+         var map;
+        var marker;
+        var myLatlng = new google.maps.LatLng(24.774265, 46.738586);
+        var geocoder = new google.maps.Geocoder();
+        var infowindow = new google.maps.InfoWindow();
+        function initMap1() {
+            var mapOptions = {
+                zoom: 10,
+                center: myLatlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            map = new google.maps.Map(document.getElementById("map"), mapOptions);
+            marker = new google.maps.Marker({
+                map: map,
+                position: myLatlng,
+                draggable: true
+            });
+            geocoder.geocode({ 'latLng': myLatlng }, function (results, status) {
+                if (status == google.maps.GeocoderStatus.OK) {
+                    if (results[0]) {
+                        document.querySelector(".address").value = results[0].formatted_address;
+                        infowindow.setContent(results[0].formatted_address);
+                        infowindow.open(map, marker);
+                    }
+                }
+            });
+            google.maps.event.addListener(marker, 'dragend', function () {
+                geocoder.geocode({ 'latLng': marker.getPosition() }, function (results, status) {
+                    if (status == google.maps.GeocoderStatus.OK) {
+                        if (results[0]) {
+                            document.querySelector(".address").value = results[0].formatted_address;
+                            infowindow.setContent(results[0].formatted_address);
+                            infowindow.open(map, marker);
+                        }
+                    }
+                });
+            });
+        }
+        google.maps.event.addDomListener(window, 'load', initMap1);
     </script>
 
 </body>

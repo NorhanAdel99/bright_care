@@ -72,6 +72,14 @@
                                             البريد الالكتروني </span><span class="text-danger f-16">*</span></label>
                                     <input type="email" class="form-control " id="mail" placeholder="example@info.com">
                                 </div>
+                                <div class="form-group containInputIcon">
+                                    <label class="form-label" for="location1"><span class="m-end-5">المدينة</span><span
+                                            class="text-danger f-16">*</span></label>
+                                    <input type="text" class="form-control form-input address" id="location1"
+                                        placeholder="الرياض" data-toggle="modal" data-target="#exampleModal2">
+                                    <label class="input_icon" for="location1"><i
+                                            class="fa-solid fa-location-dot "></i></label>
+                                </div>
                                 <div class="form-group">
                                     <label class="form-label phoneInput" for="commercialRegister
                                 "><span class="m-end-5">
@@ -86,14 +94,25 @@
                                     <input type="text" class="form-control " id="responsible
                                 " placeholder="محمد احمد">
                                 </div>
-                                <div class="form-group containInputIcon">
-                                    <label class="form-label" for="location1"><span class="m-end-5">المدينة</span><span
-                                            class="text-danger f-16">*</span></label>
-                                    <input type="text" class="form-control form-input address" id="location1"
-                                        placeholder="الرياض" data-toggle="modal" data-target="#exampleModal2">
-                                    <label class="input_icon" for="location1"><i
-                                            class="fa-solid fa-location-dot "></i></label>
-
+                                <div class="form-group position-relative">
+                                    <label class="form-label " for="password2"><span class="m-end-5"> كلمة المرور
+                                        </span><span class="text-danger f-16">*</span></label>
+                                    <input type="password" class="form-control password" id="password2"
+                                        placeholder="الرجاء ادخال كلمة المرور ">
+                                    <div class="input_icon eye " data-id="password2">
+                                        <i class="fa-regular  fa-eye-slash"></i>
+                                        <!-- <i class="fa-regular fa-eye"></i> -->
+                                    </div>
+                                </div>
+                                <div class="form-group position-relative">
+                                    <label class="form-label " for="password3"><span class="m-end-5">تأكيد كلمة المرور
+                                        </span><span class="text-danger f-16">*</span></label>
+                                    <input type="password" class="form-control password" id="password3"
+                                        placeholder=" تأكيد كلمة المرور ">
+                                    <div class="input_icon eye" data-id="password3">
+                                        <i class="fa-regular  fa-eye-slash"></i>
+                                        <!-- <i class="fa-regular fa-eye"></i> -->
+                                    </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="check1" class="mb-0 mb-0 d-flex align-items-center gap-10">
@@ -201,9 +220,7 @@
                     link.parentElement.classList.remove('active');
                 }
             })
-        </script>
-</body>
-<script>
+    
     document.querySelector('#lang').onchange = function () {
         if (document.querySelector('#lang').checked) {
             document.querySelector('.en').style.display = 'block'
@@ -216,7 +233,35 @@
 
         }
     }
+     // /////////////////////////////////////////////////////
+     let passwords = document.querySelectorAll(".password");
+        let eyes = document.querySelectorAll('.eye')
+        eyes.forEach(eye => {
+            eye.onclick = function () {
+                passwords.forEach(pass => {
+                    if (pass.value == '') {
+                        return
+                    } else {
+                        if (pass.id == eye.dataset.id) {
+                            let type = pass.getAttribute('type') === 'password' ? 'text' : 'password';
+                            pass.setAttribute("type", type);
+                            if (pass.getAttribute('type') === 'password' || pass.value == "") {
+                                eye.querySelector('.fa-regular').classList.add('fa-eye-slash')
+                                eye.querySelector('.fa-regular').classList.remove('fa-eye')
+                            } else if (pass.getAttribute('type') === 'text') {
+                                eye.querySelector('.fa-regular').classList.remove('fa-eye-slash')
+                                eye.querySelector('.fa-regular').classList.add('fa-eye')
+                            }
+                        }
+                    }
+
+
+                })
+            }
+
+        });
 
 </script>
 
+</body>
 </html>

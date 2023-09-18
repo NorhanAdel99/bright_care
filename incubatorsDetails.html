@@ -401,7 +401,7 @@
                             </div>
                         </div>
 
-                        <button class="btn main_btn w-100 form-group" type="submit" data-dismiss="modal"
+                        <button class="btn main_btn w-100 form-group butn__new" type="submit" data-dismiss="modal"
                             data-toggle="modal" data-target="#certainModal">
                             حفظ التعديلات
                         </button>
@@ -436,8 +436,8 @@
                             <img src="img/alert.png" alt="alert" class="alert">
                         </div>
                         <div class="flex-center gap-10 flex-wrap">
-                            <button class="btn main_btn butn__new" data-dismiss="modal">لا،رجوع</button>
-                            <button class="btn main_btn danger" data-toggle="modal" data-target="#certainModalDel"
+                            <button class="btn main_btn butn__new h-0" data-dismiss="modal">لا،رجوع</button>
+                            <button class="btn main_btn danger butn__new h-0" data-toggle="modal" data-target="#certainModalDel"
                                 data-dismiss="modal">نعم،حذف</button>
                         </div>
 
@@ -477,8 +477,8 @@
                             <img src="img/alert.png" alt="alert" class="alert">
                         </div>
                         <div class="flex-center gap-10 flex-wrap">
-                            <button class="btn main_btn butn__new" data-dismiss="modal">لا،رجوع</button>
-                            <button class="btn main_btn danger" data-toggle="modal"
+                            <button class="btn main_btn butn__new h-0" data-dismiss="modal">لا،رجوع</button>
+                            <button class="btn main_btn danger butn__new h-0" data-toggle="modal"
                                 data-target="#certainModalDeactivate" data-dismiss="modal">نعم </button>
                         </div>
 
@@ -520,10 +520,12 @@
                             <textarea name="text" id="notification" rows="5" class="form-control"
                                 placeholder="اكتب هنا"></textarea>
                         </div>
-                        <button class="btn main_btn butn__new w-100 form-group" type="submit" data-dismiss="modal"
+                        <div class="flex-center">
+                            <button class="btn main_btn butn__new  lg_btn" type="submit" data-dismiss="modal"
                             data-toggle="modal" data-target="#certainModalNotice">
                             ارسال
                         </button>
+                        </div>
                     </form>
                 </div>
             </div>
